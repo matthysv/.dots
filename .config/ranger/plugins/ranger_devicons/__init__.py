@@ -1,3 +1,4 @@
+# Init
 import os
 import ranger.api
 from ranger.core.linemode import LinemodeBase
