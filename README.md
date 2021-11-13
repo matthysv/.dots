@@ -51,6 +51,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 - grep
 - mpv
 - ntp
+- ranger
 - sed
 - vim
 - zsh
@@ -58,8 +59,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 - zsh-syntax-highlighting
 
 ### Desktop and Display manager:
-- xorg (or xorg-server)
-- xorg-xrandr
+- xorg (or xorg-server) ~ Install this if you did not follow my directions for archinstall
 - awesome-terminal-fonts
 - bspwm
 - dunst
@@ -67,14 +67,16 @@ nmcli device wifi connect NETWORKNAME password PASS
 - gvfs
 - lxappearance
 - network-manager-applet
-- sddm
-- sxhkd
 - picom
 - rofi
 - rxvt-unicode
+- sddm
+- sxhkd
 - thunar
 - thunar-archive-plugin
+- thunar-volman
 - xorg-font-util
+- xorg-xrandr
 - xorg-xsetroot
 
 ### Nvidia packages
@@ -86,23 +88,20 @@ nmcli device wifi connect NETWORKNAME password PASS
 - nvidia-xrun
 
 ### Sound Essentials:
-- pulseaudio
-- pulseaudio-alsa
-- pavucontrol
 - alsa-firmware
 - alsa-lib
 - alsa-plugins
 - alsa-utils
+- pavucontrol
 - playerctl
+- pulseaudio
+- pulseaudio-alsa
 - volumeicon
 
 ### Additional reccomended packages
-- ranger
-- w3m
 - emacs
-- iwd
 - meld
-- thunar-volman
+- w3m
 
 #### Install paru if you don't have it already:
 ```
@@ -121,7 +120,7 @@ makepkg -si
 - urxvt-resize-font-git
 
 # Enable multilib
-In vanilla arch, multilib is disabled by default. To enable it, edit /etc/pacman.conf and uncomment the following lines:
+In vanilla arch, multilib is disabled by default. If you wish to enable it, edit /etc/pacman.conf and uncomment the following lines:
 ```
 [multilib]
 Include = /etc/pacman.d/mirrorlist
