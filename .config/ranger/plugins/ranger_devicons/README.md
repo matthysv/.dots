@@ -1,4 +1,4 @@
-# File icons for the Ranger file manager #
+# File icons for the Ranger file manager
 
 This plugin introduces a new linemode that prefixes file names with a file icon
 
