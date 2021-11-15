@@ -74,9 +74,9 @@ super + w
 super + t
     urxvt 'btop task manager' -e btop
 
-#arcolinux-logout
+#Power Menu
 super + x
-    arcolinux-logout
+    rofi -show power-menu -modi power-menu:~/.config/rofi/scripts/rofi-power-menu
 
 #Rofi
 super + p
