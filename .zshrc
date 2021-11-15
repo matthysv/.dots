@@ -73,10 +73,12 @@ export PATH=/home/matthys/.cargo/bin:$PATH
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
+# Aliases
+alias neofetch='neofetch --source ~/.config/neofetch/art/skull1.txt'
+
 # Visual shell startup command
 pokemon-colorscripts -r 1-3
 # colorscript -e panes
-
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

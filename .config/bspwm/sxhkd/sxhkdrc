@@ -102,6 +102,10 @@ super + v
 super + m
     urxvt 'cmus' -e cmus
 
+#Network Manager
+super + n
+    bash ~/.config/rofi/scripts/rofi-network-manager.sh
+
 #urxvt
 super + Return
     urxvt

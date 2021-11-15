@@ -66,7 +66,6 @@ nmcli device wifi connect NETWORKNAME password PASS
 - feh
 - gvfs
 - lxappearance
-- network-manager-applet
 - picom
 - rofi
 - rxvt-unicode
@@ -78,6 +77,10 @@ nmcli device wifi connect NETWORKNAME password PASS
 - xorg-font-util
 - xorg-xrandr
 - xorg-xsetroot
+
+### System tray (optional):
+- network-manager-applet
+- volumeicon
 
 ### Nvidia packages
 - For normal kernel: nvidia
@@ -96,9 +99,9 @@ nmcli device wifi connect NETWORKNAME password PASS
 - playerctl
 - pulseaudio
 - pulseaudio-alsa
-- volumeicon
 
 ### Additional reccomended packages
+- cmus
 - emacs
 - meld
 - w3m
