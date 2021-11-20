@@ -21,29 +21,24 @@ $HOME/.config/polybar/launch.sh &
 
 keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
-if [ $keybLayout = "be" ]; then
-  run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc-azerty &
-else
-  run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-fi
+run sxhkd &
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-scale ~/.config/bspwm/wall.png &
+feh --bg-fill ~/.config/bspwm/wall.png &
 #feh --bg-fill ~/.config/bspwm/wall.jpg &
 #wal -i ~/Pictures/Wallpapers/oldchinesetown.jpg &
 
-dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
 
 #run variety &
 run nm-applet &
 run xfce4-power-manager &
 numlockx on &
-blueberry-tray &
+#blueberry-tray &
 picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
-run volumeicon &
+#run volumeicon &
 
 #run discord &
 #run discord-canary &

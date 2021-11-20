@@ -54,12 +54,14 @@ nmcli device wifi connect NETWORKNAME password PASS
 - ranger
 - sed
 - vim
+- zathura-pdf-mupdf
 - zsh
 - zsh-completions
 - zsh-syntax-highlighting
 
 ### Desktop and Display manager:
 - xorg (or xorg-server) ~ Install this if you did not follow my directions for archinstall
+- argyllcms
 - awesome-terminal-fonts
 - bspwm
 - dunst
@@ -69,7 +71,9 @@ nmcli device wifi connect NETWORKNAME password PASS
 - picom
 - rofi
 - rxvt-unicode
-- sddm
+- lightdm
+- lightdm-gtk-greeter
+- lightdm-gtk-greeter-settings
 - sxhkd
 - thunar
 - thunar-archive-plugin
@@ -101,9 +105,9 @@ nmcli device wifi connect NETWORKNAME password PASS
 - pulseaudio-alsa
 
 ### Additional reccomended packages
-- cmus
 - emacs
 - meld
+- ncmpcpp and mpd
 - w3m
 
 #### Install paru if you don't have it already:
@@ -115,10 +119,11 @@ makepkg -si
 ```
 
 #### From AUR (with paru):
-- multicolor-sddm-theme
+- hblock
 - nerd-fonts-source-code-pro
 - pokemon-colorscripts-git
 - polybar
+- roccat-tools-tyon
 - shell-color-scripts
 - urxvt-resize-font-git
 
@@ -133,25 +138,11 @@ Include = /etc/pacman.d/mirrorlist
 ```
 git clone https://github.com/matthysv/.dots
 ```
-After installing needed packages and placing dotfiles in the appropriate directories, run this command to enable sddm:
+After installing needed packages and placing dotfiles in the appropriate directories, run this command to enable lightdm:
 ```
-sudo systemctl enable sddm.service -f
+sudo systemctl enable lightdm
 ```
-And reboot. To change sddm theme:
-```
-sudo vim /usr/lib/sddm/sddm.conf.d/default.conf
-```
-Edit the file specifying desired theme. In this case we use the one we got from the AUR:
-```
-[Theme]
-Current=multicolor-sddm-theme
-```
-multicolor-sddm-theme config is located at /usr/share/sddm/themes/multicolor-sddm-theme/theme.conf
-```
-[General]
-background=png/dracula-01.png
-displayFont="Raleway"
-```
+And reboot.
 
 # Finishing up and installing additional software
 
@@ -165,6 +156,11 @@ Find and set time zone:
 timedatectl list-timezones
 timedatectl set-timezone America/New_York
 ```
+#### Setting up roccat-tools
+Roccat tools needs you to run this command to give it the proper permissions:
+```
+sudo usermod -a -G roccat $USER
+```
 
 #### Setting up zsh
 Set up zsh. Make sure .zshrc is not in the home directory. You can rename it.
@@ -175,6 +171,8 @@ change shell to zsh
 ```
 chsh -s /usr/bin/zsh
 ```
+
+
 
 #### Install Doom Emacs
 ```
