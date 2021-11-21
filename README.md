@@ -189,7 +189,11 @@ sudo make install
 ```
 
 #### Install yt-rofi
+```
 git clone https://github.com/kushagraa-j/youtube-rofi.git
+cd youtube-rofi
+sudo make install
+```
 
 #### Dracula GTK widget theming and icons
 ```
