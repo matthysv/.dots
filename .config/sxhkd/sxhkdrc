@@ -106,6 +106,10 @@ super + n
 super + Return
     urxvt
 
+#youtube-rofi
+super + y
+    yt-rofi
+
 #Xkill
 super + Escape
     xkill
@@ -334,19 +338,19 @@ XF86AudioMute
 
 #PLAY
 XF86AudioPlay
-    playerctl play-pause
+    mpc toggle
 
 #Next
 XF86AudioNext
-    playerctl next
+    mpc next
 
 #previous
 XF86AudioPrev
-    playerctl previous
+    mpc prev
 
 #Stop
 XF86AudioStop
-    playerctl stop
+    mpc stop
 
 #Brightness up
 XF86MonBrightnessUp
