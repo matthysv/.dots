@@ -49,6 +49,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 - ffmpeg
 - git
 - grep
+- jq
 - mpv
 - ntp
 - ranger
@@ -107,7 +108,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 ### Additional reccomended packages
 - emacs
 - meld
-- ncmpcpp and mpd
+- ncmpcpp, mpc and mpd
 - w3m
 
 #### Install paru if you don't have it already:
@@ -186,6 +187,9 @@ git clone https://github.com/pystardust/ani-cli.git
 cd ani-cli
 sudo make install
 ```
+
+#### Install yt-rofi
+git clone https://github.com/kushagraa-j/youtube-rofi.git
 
 #### Dracula GTK widget theming and icons
 ```
