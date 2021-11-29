@@ -327,14 +327,7 @@ XF86AudioLowerVolume
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
 
-#Playerctl works for Pragha, Spotify and others
-#Delete the line for playerctl if you want to use mpc
-#and replace it with the corresponding code
-#mpc works for e.g.ncmpcpp
-#mpc toggle
-#mpc next
-#mpc prev
-#mpc stop
+#Use playerctl for cmus, pragha, spotify and others
 
 #PLAY
 XF86AudioPlay

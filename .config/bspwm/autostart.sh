@@ -46,6 +46,7 @@ picom --config $HOME/.config/bspwm/picom.conf &
 #run noisetorch &
 #run spotify &
 #run atom &
+#mpd
 /usr/bin/emacs --daemon &
 
 export PATH=/home/matthys/.cargo/bin

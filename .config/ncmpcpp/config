@@ -1,2 +1,3 @@
 user_interface = alternative
 startup_slave_screen = "visualizer"
+lyrics_directory = ~/.cache/lyrics

@@ -74,7 +74,12 @@ export PATH=/home/matthys/.cargo/bin:$PATH
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 # Aliases
-alias neofetch='neofetch --source ~/.config/neofetch/art/skull1.txt'
+alias btoff='systemctl stop bluetooth'
+alias bton='systemctl start bluetooth'
+alias neofetch='neofetch --source ~/.config/neofetch/art/rectangles'
+alias rotateleft='xrandr --output eDP-1 --rotate left'
+alias rotateright='xrandr --output eDP-1 --rotate right'
+alias resetdisplay='autorandr horizontal'
 
 # Visual shell startup command
 #pokemon-colorscripts -r 1-3

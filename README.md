@@ -1,11 +1,5 @@
 # .dots
-This is a guide to get a minimal arch linux system running with BSPWM. Some files are based on my modified configs from an arco linux system. There are no special scripts.
-
-## Easy install
-
-Run archinstall and choose the xorg option with the appropriate display drivers.
-
-## Connecting to wifi on vanilla arch:
+These are my public dotfiles. They work on arch and arch-based systems. They include configs for BSPWM witth xshkd and polybar, as well as xfce.
 
 ### With iwd
 ```
@@ -40,7 +34,7 @@ nmcli device wifi list
 nmcli device wifi connect NETWORKNAME password PASS
 ```
 
-## Need to install:
+## Packages to install:
 
 ### Utilities:
 - btop
@@ -63,6 +57,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 ### Desktop and Display manager:
 - xorg (or xorg-server) ~ Install this if you did not follow my directions for archinstall
 - argyllcms
+- autorandr
 - awesome-terminal-fonts
 - bspwm
 - dunst
@@ -79,6 +74,8 @@ nmcli device wifi connect NETWORKNAME password PASS
 - thunar
 - thunar-archive-plugin
 - thunar-volman
+- xfce4
+- xfce4-whiskermenu-plugin
 - xorg-font-util
 - xorg-xrandr
 - xorg-xsetroot
@@ -89,8 +86,8 @@ nmcli device wifi connect NETWORKNAME password PASS
 
 ### Nvidia packages
 - For normal kernel: nvidia
-- For zen kernel: nvidia-dkms
-- For LTS kernel: nvidia-lts
+- For zen kernel: nvidia-dkms nvidia-dkms-headers
+- For LTS kernel: nvidia-lts nvidia-lts-headers
 - nvidia-settings
 - nvidia-utils
 - nvidia-xrun
@@ -101,7 +98,6 @@ nmcli device wifi connect NETWORKNAME password PASS
 - alsa-plugins
 - alsa-utils
 - pavucontrol
-- playerctl
 - pulseaudio
 - pulseaudio-alsa
 
@@ -111,7 +107,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 - ncmpcpp, mpc and mpd
 - w3m
 
-#### Install paru if you don't have it already:
+#### Install paru if you don't have an AUR helper
 ```
 sudo pacman -S base-devel --needed
 git clone https://aur.archlinux.org/paru.git
@@ -119,7 +115,7 @@ cd paru
 makepkg -si
 ```
 
-#### From AUR (with paru):
+#### From AUR
 - hblock
 - nerd-fonts-source-code-pro
 - pokemon-colorscripts-git
@@ -173,8 +169,6 @@ change shell to zsh
 chsh -s /usr/bin/zsh
 ```
 
-
-
 #### Install Doom Emacs
 ```
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
@@ -202,15 +196,8 @@ sudo cp -r gtk /usr/share/themes
 git clone https://github.com/matheuuus/dracula-icons
 sudo cp -r dracula-icons /usr/share/icons
 ```
-#### Theming
 Use lxappearance to set the appearance of gtk applications as well as the mouse pointer. Set the cursor on bspwm with the following command:
 ```
 xsetroot -cursor_name left_ptr
-```
-
-#### If you need to update Dracula rofi theme
-```
-git clone https://github.com/dracula/rofi
-cp rofi/theme/config1.rasi ~/.config/rofi/config.rasi
 ```
 
