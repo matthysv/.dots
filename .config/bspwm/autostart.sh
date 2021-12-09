@@ -31,7 +31,7 @@ feh --bg-fill ~/.config/bspwm/wall.png &
 xsetroot -cursor_name left_ptr &
 
 #run variety &
-run nm-applet &
+#run nm-applet &
 run xfce4-power-manager &
 numlockx on &
 #blueberry-tray &

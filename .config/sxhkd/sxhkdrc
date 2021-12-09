@@ -120,15 +120,19 @@ super + Escape
 
 #File-Manager
 super + shift + Return
-	urxvt 'ranger' -e ranger
+    urxvt 'ranger' -e ranger
+
+#tor browser
+super + shift + w
+    torbrowser-launcher
 
 #rofi drun
 super + shift + d
-	rofi -show drun
+    rofi -show drun
 
 #reload sxhkd:
 super + shift + s
-	pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd
 
 
 #################################################################
@@ -195,9 +199,9 @@ ctrl + alt + r
 ctrl + alt + Return
     thunar
 
-#urxvt
+#xfce terminal
 ctrl + alt + t
-    urxvt
+    xfce4-terminal
 
 #Xfce4-appfinder
 #ctrl + alt + a

@@ -98,8 +98,11 @@ nmcli device wifi connect NETWORKNAME password PASS
 - alsa-plugins
 - alsa-utils
 - pavucontrol
-- pulseaudio
-- pulseaudio-alsa
+- pipewire
+- pipewire-pulse
+- pipewire-alsa
+- pipewire-jack
+- pipewire-media-session
 
 ### Additional reccomended packages
 - emacs
@@ -108,6 +111,11 @@ nmcli device wifi connect NETWORKNAME password PASS
 - w3m
 
 #### Install paru if you don't have an AUR helper
+
+```
+cargo install paru
+```
+Or without cargo:
 ```
 sudo pacman -S base-devel --needed
 git clone https://aur.archlinux.org/paru.git
@@ -191,7 +199,7 @@ sudo make install
 
 #### Dracula GTK widget theming and icons
 ```
-git clone https:/github.com/dracula/gtk.git
+git clone https://github.com/dracula/gtk.git
 sudo cp -r gtk /usr/share/themes
 git clone https://github.com/matheuuus/dracula-icons
 sudo cp -r dracula-icons /usr/share/icons
