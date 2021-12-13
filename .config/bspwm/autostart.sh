@@ -12,7 +12,8 @@ function run {
 #xrandr --output DP-0 --primary --mode 2560x1440 --rate 144.00 --output HDMI-0 --mode 1920x1080 --rate 60.00 --left-of DP-0 --rotate left
 autorandr horizontal
 
-#dispwin -d1 /home/matthys/.config/icm/160.icm
+#Set monitor color profile using argyllcms
+#dispwin -d1 ~/.config/icm/160.icm
 
 $HOME/.config/polybar/launch.sh &
 
@@ -23,30 +24,26 @@ keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
 run sxhkd &
 
-#Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-fill ~/.config/bspwm/wall.png &
+#Wallpaper
+feh --bg-fill $HOME/.config/bspwm/wall.png &
 #feh --bg-fill ~/.config/bspwm/wall.jpg &
-#wal -i ~/Pictures/Wallpapers/oldchinesetown.jpg &
+#wal -i ~/Pictures/Wallpapers/example.jpg &
 
 xsetroot -cursor_name left_ptr &
 
-#run variety &
 #run nm-applet &
-run xfce4-power-manager &
+#run xfce4-power-manager &
 numlockx on &
-#blueberry-tray &
+#blueman-applet &
 picom --config $HOME/.config/bspwm/picom.conf &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/xfce4/notifyd/xfce4-notifyd &
 #run volumeicon &
 
 #run discord &
-#run discord-canary &
 #run kdeconnect-indicator &
 #run noisetorch &
-#run spotify &
-#run atom &
-#mpd
-/usr/bin/emacs --daemon &
+#mpd &
+#/usr/bin/emacs --daemon &
 
 export PATH=/home/matthys/.cargo/bin

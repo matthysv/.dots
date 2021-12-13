@@ -1,8 +1,36 @@
-! ------------------------------------------------------------------------------
-! URxvt standard arcolinux theme - Reload with xrdb -merge ~/.Xresources
-! or alias merge
-! ------------------------------------------------------------------------------
+!!Transparency
+*.alpha: 1
 
+!!! get your color schemes from here
+!!! https://terminal.sexy/
+!!! copy/paste colorcodes in
+!!! begin
+
+! Dracula Xresources palette
+*.foreground: #F8F8F2
+*.background: #282A36
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+
+!!! end
+!!! get your color schemes from here
+!!! https://terminal.sexy/
+!!! copy/paste colorcodes in
+
+!!!    URXVT SETTINGS    !!!
 
 ! general settings
 URxvt.saveLines:        50000
@@ -35,39 +63,6 @@ URxvt.externalBorder:    0
 URxvt.colorIT:      	 #4682B4
 URxvt.colorBD:      	 #F9F9F9
 URxvt.colorUL:      	 #87afd7
-
-!!! get your color schemes from here
-!!! https://terminal.sexy/
-!!! copy/paste colorcodes in
-!!! begin
-! Project:    Nord XResources
-! Version:    0.1.0
-! Repository: https://github.com/arcticicestudio/nord-xresources
-! License:    MIT
-
-! Dracula Xresources palette
-*.foreground: #F8F8F2
-*.background: #282A36
-*.color0:     #000000
-*.color8:     #4D4D4D
-*.color1:     #FF5555
-*.color9:     #FF6E67
-*.color2:     #50FA7B
-*.color10:    #5AF78E
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
-*.color5:     #FF79C6
-*.color13:    #FF92D0
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
-*.color7:     #BFBFBF
-
-!!! end
-!!! get your color schemes from here
-!!! https://terminal.sexy/
-!!! copy/paste colorcodes in
 
 ! fonts
 URxvt.letterSpace: 	    		-1
@@ -102,9 +97,6 @@ URxvt.keysym.M-Escape:  perl:keyboard-select:activate
 URxvt.keysym.M-s:       perl:keyboard-select:search
 URxvt.keysym.M-u:       perl:url-select:select_next
 
-! fullscreen - sudo pacman -S urxvt-fullscreen
-urxvt.keysym.F11:       perl:fullscreen:switch
-
 ! tabbed
 URxvt.tabbed.tabbar-fg: 4
 URxvt.tabbed.tabbar-bg: 16
@@ -117,9 +109,7 @@ URxvt.keysym.Control-Shift-C: perl:clipboard:copy
 URxvt.keysym.Control-Shift-V: perl:clipboard:paste
 
 
-! ------------------------------------------------------------------------------
-! xterm standard arcolinux theme
-! ------------------------------------------------------------------------------
+!!!    XTERM SETTINGS    !!!
 
 xterm*faceName: Monospace
 xterm*faceSize: 11
@@ -152,11 +142,7 @@ xterm*colorBDMode: true
 xterm*colorBD: rgb:ff/ff/ff
 
 
-
-
-! ------------------------------------------------------------------------------
-! UXTerm standard arcolinux theme
-! ------------------------------------------------------------------------------
+!!!    UXTERM SETTINGS    !!!
 
 ! termtype
 UXTerm*termName: xterm-256color
