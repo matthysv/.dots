@@ -45,5 +45,3 @@ picom --config $HOME/.config/bspwm/picom.conf &
 #run noisetorch &
 #mpd &
 #/usr/bin/emacs --daemon &
-
-export PATH=/home/matthys/.cargo/bin
