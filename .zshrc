@@ -67,7 +67,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 # Export Cargo Path
-export PATH=/home/matthys/.cargo/bin:$PATH
+export PATH=~/matthys/.cargo/bin:$PATH
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
