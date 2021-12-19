@@ -20,7 +20,7 @@ super + w
 
 #Btop
 super + t
-    urxvt 'btop task manager' -e btop
+    st -e btop
 
 #Power Menu
 super + x
@@ -44,15 +44,15 @@ super + v
 
 #ncmpcpp
 super + m
-    urxvt 'ncmpcpp' -e ncmpcpp
+    st -e ncmpcpp
 
 #Network Manager
 super + n
     bash ~/.config/rofi/scripts/rofi-network-manager.sh
 
-#urxvt
+#st
 super + Return
-    urxvt
+    st
 
 #youtube-rofi
 super + y
@@ -68,7 +68,7 @@ super + Escape
 
 #File-Manager
 super + shift + Return
-    urxvt 'ranger' -e ranger
+    st -e ranger
 
 #tor browser
 super + shift + w
