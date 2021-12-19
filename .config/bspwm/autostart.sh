@@ -31,6 +31,8 @@ feh --bg-fill $HOME/.config/bspwm/wall.png &
 
 xsetroot -cursor_name left_ptr &
 
+xrdb merge ~/.Xresources
+
 #run nm-applet &
 #run xfce4-power-manager &
 numlockx on &

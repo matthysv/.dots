@@ -55,12 +55,10 @@ nmcli device wifi connect NETWORKNAME password PASS
 - zsh-syntax-highlighting
 
 ### Desktop and Display manager:
-- xorg (or xorg-server) ~ Install this if you did not follow my directions for archinstall
 - argyllcms
 - autorandr
 - awesome-terminal-fonts
 - bspwm
-- dunst
 - feh
 - gvfs
 - lxappearance
@@ -71,10 +69,8 @@ nmcli device wifi connect NETWORKNAME password PASS
 - lightdm-gtk-greeter
 - lightdm-gtk-greeter-settings
 - sxhkd
-- thunar
-- thunar-archive-plugin
-- thunar-volman
 - xfce4
+- xfce4 notifyd
 - xfce4-whiskermenu-plugin
 - xorg-font-util
 - xorg-xrandr
@@ -108,6 +104,9 @@ nmcli device wifi connect NETWORKNAME password PASS
 - emacs
 - meld
 - ncmpcpp, mpc and mpd
+- thunar
+- thunar-archive-plugin
+- thunar-volman
 - w3m
 
 #### Install paru if you don't have an AUR helper
@@ -167,12 +166,7 @@ Roccat tools needs you to run this command to give it the proper permissions:
 sudo usermod -a -G roccat $USER
 ```
 
-#### Setting up zsh
-Set up zsh. Make sure .zshrc is not in the home directory. You can rename it.
-```
-zsh
-```
-change shell to zsh
+#### Change shell to zsh
 ```
 chsh -s /usr/bin/zsh
 ```
@@ -187,6 +181,14 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ```
 git clone https://github.com/pystardust/ani-cli.git
 cd ani-cli
+sudo make install
+```
+
+#### Install st
+
+```
+git clone https://github.com/siduck/st
+cd st
 sudo make install
 ```
 

@@ -30,6 +30,12 @@
 !!! https://terminal.sexy/
 !!! copy/paste colorcodes in
 
+!!!    ST SETTINGS    !!!
+
+st.alpha:	1
+st.borderpx:	20
+st.font:	SauceCodePro Nerd Font Mono:style:regular:pixelsize=22
+
 !!!    URXVT SETTINGS    !!!
 
 ! general settings
@@ -41,7 +47,7 @@ URxvt.iso14755:         false
 URxvt.iso14755_52:      false
 URxvt.meta8:            false
 URxvt.metaSendsEscape:  true
-URxvt.iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
+URxvt.iconFile:		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
 URxvt.urlLauncher:      librewolf
 URxvt.underlineURLs:    true
 URxvt.urlButton:        1
@@ -65,12 +71,12 @@ URxvt.colorBD:      	 #F9F9F9
 URxvt.colorUL:      	 #87afd7
 
 ! fonts
-URxvt.letterSpace: 	    		-1
-URxvt.font:                 	xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
-URxvt.imFont:               	xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
-URxvt.italicFont:           	xft:SauceCodePro Nerd Font Mono:italic:size=11,xft:Monospace:italic:size=11
-URxvt.boldFont:             	xft:SauceCodePro Nerd Font Mono:bold:size=11,xft:Monospace:bold:size=11
-URxvt.boldItalicFont:     	xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
+URxvt.letterSpace:          -1
+URxvt.font:                 xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
+URxvt.imFont:               xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
+URxvt.italicFont:           xft:SauceCodePro Nerd Font Mono:italic:size=11,xft:Monospace:italic:size=11
+URxvt.boldFont:             xft:SauceCodePro Nerd Font Mono:bold:size=11,xft:Monospace:bold:size=11
+URxvt.boldItalicFont:       xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
