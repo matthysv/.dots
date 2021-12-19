@@ -76,7 +76,7 @@ export PATH=~/matthys/.cargo/bin:$PATH
 # Aliases
 alias btoff='systemctl stop bluetooth'
 alias bton='systemctl start bluetooth'
-alias doppler='.~/.config/scripts/doppler'
+alias doppler='~/.config/scripts/doppler'
 alias neofetch='neofetch --source ~/.config/neofetch/art/rectangles'
 alias rotateleft='xrandr --output eDP-1 --rotate left'
 alias rotateright='xrandr --output eDP-1 --rotate right'
