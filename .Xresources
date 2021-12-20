@@ -72,12 +72,12 @@ URxvt.colorBD:      	 #F9F9F9
 URxvt.colorUL:      	 #87afd7
 
 ! fonts
-URxvt.letterSpace:          -1
-URxvt.font:                 xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
-URxvt.imFont:               xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
-URxvt.italicFont:           xft:SauceCodePro Nerd Font Mono:italic:size=11,xft:Monospace:italic:size=11
-URxvt.boldFont:             xft:SauceCodePro Nerd Font Mono:bold:size=11,xft:Monospace:bold:size=11
-URxvt.boldItalicFont:       xft:SauceCodePro Nerd Font Mono:regular:size=11,xft:Monospace:regular:size=11
+URxvt.letterSpace: 	    		-1
+URxvt.font:                 	xft:SauceCodePro Nerd Font Mono:regular:size=14,xft:Monospace:regular:size=12
+URxvt.imFont:               	xft:SauceCodePro Nerd Font Mono:regular:size=14,xft:Monospace:regular:size=12
+URxvt.italicFont:           	xft:SauceCodePro Nerd Font Mono:italic:size=14,xft:Monospace:italic:size=12
+URxvt.boldFont:             	xft:SauceCodePro Nerd Font Mono:bold:size=14,xft:Monospace:bold:size=12
+URxvt.boldItalicFont:     	xft:SauceCodePro Nerd Font Mono:regular:size=14,xft:Monospace:regular:size=12
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
