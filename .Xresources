@@ -35,7 +35,7 @@
 
 st.alpha:	1
 st.borderpx:	20
-st.font:	SauceCodePro Nerd Font Mono:style:regular:pixelsize=22
+st.font:	SauceCodePro Nerd Font Mono:style:regular:pixelsize=20
 
 !!!    URXVT SETTINGS    !!!
 
