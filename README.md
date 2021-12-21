@@ -1,5 +1,16 @@
 # .dots
-These are my public dotfiles. They work on arch and arch-based systems. They include configs for BSPWM witth xshkd and polybar, as well as xfce.
+These are my public dotfiles. With the listed packages, they should work on arch and arch-based systems. This repo includes configs for: 
+BSPWM with sxhkd, picom and polybar.
+Doom Emacs
+MangoHud
+mpd with mpc and ncmpcpp
+neofetch
+ranger
+rofi
+urxvt
+uxterm and xterm
+xfce terminal
+zsh
 
 ### With iwd
 ```
@@ -185,7 +196,6 @@ sudo make install
 ```
 
 #### Install st
-
 ```
 git clone https://github.com/siduck/st
 cd st
