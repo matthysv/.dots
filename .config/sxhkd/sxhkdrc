@@ -183,9 +183,13 @@ XF86MonBrightnessDown
 #        POLYBAR        #
 #########################
 
-#Hide polybar
-super + b
-    polybar-msg cmd toggle
+#Show/hide polybar
+
+super + apostrophe
+    polybar-msg cmd show && bspc config top_padding 30
+
+super + semicolon
+    polybar-msg cmd hide && bspc config top_padding 0
 
 #################################################################
 #################################################################
@@ -302,10 +306,6 @@ super + shift + Down
 super + ctrl + {Left,Down,Up,Right}
     bspc node --{focus} {west,south,north,east}
 
-# Contract tiled space
-super + ctrl + {h,j,k,l}
-    bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
-
 # Focus parent/brother/first/second for preselection
 super + ctrl + {e,r,t,y}
     bspc node --focus @{parent,brother,first,second}
@@ -339,9 +339,12 @@ alt + space
 # ALT + SHIFT KEYS
 #################################################################
 
-# Expand tiled space
+# Expand/contract a tiled space
 alt + shift + {h,j,k,l}
-    bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+    bspc node -z {left -20 0 || bspc node -z right -20 0, \
+                bottom 0 20 || bspc node -z top 0 20,\
+                top 0 -20 || bspc node -z bottom 0 -20,\
+                right 20 0 || bspc node -z left 20 0}
 
 #################################################################
 # CTRL + ALT KEYS

@@ -84,6 +84,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 - xfce4 notifyd
 - xfce4-whiskermenu-plugin
 - xorg-font-util
+- xorg-xbacklight
 - xorg-xrandr
 - xorg-xsetroot
 
