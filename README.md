@@ -66,7 +66,7 @@ nmcli device wifi connect NETWORKNAME password PASS
 - zsh-syntax-highlighting
 
 ### Desktop and Display manager:
-- argyllcms
+- argyllcms (for color profile)
 - autorandr
 - awesome-terminal-fonts
 - bspwm
@@ -76,15 +76,22 @@ nmcli device wifi connect NETWORKNAME password PASS
 - picom
 - rofi
 - rxvt-unicode
+- libwnck3
 - lightdm
 - lightdm-gtk-greeter
 - lightdm-gtk-greeter-settings
+- mesa-utils
 - sxhkd
+- xf86-input-libinput
 - xfce4
 - xfce4 notifyd
 - xfce4-whiskermenu-plugin
 - xorg-font-util
+- xorg-server
 - xorg-xbacklight
+- xorg-xdpyinfo
+- xorg-xinput
+- xorg-xkill
 - xorg-xrandr
 - xorg-xsetroot
 
