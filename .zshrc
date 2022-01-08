@@ -94,6 +94,7 @@ alias rotateleft='xrandr --output eDP-1 --rotate left'
 alias rotateright='xrandr --output eDP-1 --rotate right'
 alias resetdisplay='autorandr horizontal'
 alias steamdrac='~/.local/share/Steam/skins/Dracula/install.sh'
+alias tox='toxic -f ~/.config/tox/tox.tox'
 alias weather='curl wttr.in'
 
 # Visual shell startup command
