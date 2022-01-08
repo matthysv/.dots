@@ -50,6 +50,10 @@ super + m
 super + n
     bash ~/.config/rofi/scripts/rofi-network-manager.sh
 
+#steam
+super + s
+    steam-runtime -noverifyfiles
+
 #st
 super + Return
     st

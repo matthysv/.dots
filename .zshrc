@@ -93,6 +93,7 @@ alias neofetch='neofetch --source ~/.config/neofetch/art/rectangles'
 alias rotateleft='xrandr --output eDP-1 --rotate left'
 alias rotateright='xrandr --output eDP-1 --rotate right'
 alias resetdisplay='autorandr horizontal'
+alias steamdrac='~/.local/share/Steam/skins/Dracula/install.sh'
 alias weather='curl wttr.in'
 
 # Visual shell startup command
