@@ -46,4 +46,5 @@ picom --config $HOME/.config/bspwm/picom.conf &
 #run kdeconnect-indicator &
 #run noisetorch &
 #mpd &
+#steam-runtime -noverifyfiles -silent &
 #/usr/bin/emacs --daemon &
