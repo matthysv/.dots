@@ -11,10 +11,6 @@
     bordercolor: @active-background;
 }
 
-configuration {
-  show-icons:         true;
-}
-
 #window {
     background-color: @background;
     border:           1;

@@ -28,7 +28,7 @@ super + x
 
 #Rofi
 super + p
-    rofi -show drun
+    rofi -show drun -show-icons
 
 #Rofi theme selector
 super + r
