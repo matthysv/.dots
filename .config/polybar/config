@@ -43,9 +43,9 @@ format-offset =
 ; Nord theme ============
 ;background = #2F343F
 ;foreground = #eceff4
-alert = #d08770
-volume-min = #a3be8c
-volume-med = #ebcb8b
+;alert = #d08770
+;volume-min = #a3be8c
+;volume-med = #ebcb8b
 volume-max = #bf616a
 ; =======================
 
@@ -125,8 +125,8 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = bspwm xwindow
-modules-center = battery
-modules-right = memory2 cpu2 date
+modules-center = mpd
+modules-right = battery memory2 cpu2 date
 
 tray-detached = false
 tray-offset-x = 0
@@ -654,7 +654,7 @@ format-underline = #0084FF
 [module/jgmenu]
 type = custom/script
 interval = 120
-exec = echo "ArcoLinux"
+exec = echo "Archlinux"
 click-left = "jgmenu_run >/dev/null 2>&1 &"
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
@@ -761,20 +761,20 @@ format-background = ${colors.background}
 ;https://github.com/jaagr/polybar/wiki/Module:-mpd
 type = internal/mpd
 ;format-online =  "<label-song>   <icon-prev>  <icon-stop>  <toggle>  <icon-next>"
-format-online =  "<label-song>  <bar-progress>"
+format-online =  "<bar-progress> <label-song> <toggle>"
 ;format-online =  "<label-song>  <bar-progress> <icon-prev>  <icon-stop>  <toggle>  <icon-next>"
 icon-prev = 
 icon-stop = 
 icon-play = 
 icon-pause = 
 icon-next = 
-label-song-maxlen = 40
+label-song-maxlen = 50
 label-song-ellipsis = true
 bar-progress-width = 10
 bar-progress-indicator = 
 bar-progress-fill = 
 bar-progress-empty = 
-bar-progress-fill-foreground = #ff0
+bar-progress-fill-foreground = #F1FA8C
 bar-progress-fill-background = ${colors.background}
 bar-progress-indicator-foreground = ${colors.foreground}
 format-online-foreground = ${colors.foreground}
@@ -829,22 +829,6 @@ format-underline = #FFBB00
 
 ################################################################################
 
-[module/pamac-manager]
-type = custom/script
-exec = pamac checkupdates -q | wc -l
-interval = 1000
-label = Pamac : %output%
-tail = true
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-prefix-foreground = #738adb
-format-underline = #738adb
-click-right = pamac-manager &
-click-left = pamac-manager &
-format-prefix = " "
-
-################################################################################
-
 [module/pavolume]
 type = custom/script
 tail = true
@@ -857,8 +841,6 @@ scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
 format-underline = #ff79c6
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-
-
 
 ################################################################################
 
