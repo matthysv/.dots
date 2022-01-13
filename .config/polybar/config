@@ -125,8 +125,8 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = bspwm xwindow
-modules-center = mpd
-modules-right = battery memory2 cpu2 date
+modules-center = battery mpd
+modules-right = memory2 cpu2 date
 
 tray-detached = false
 tray-offset-x = 0
@@ -136,15 +136,6 @@ tray-maxsize = 20
 tray-scale = 1.0
 tray-position = right
 tray-background = ${colors.background}
-
-;tray-detached = false
-;tray-offset-x = 0
-;tray-offset-y = 0
-;tray-padding = 2
-;tray-maxsize = 20
-;tray-scale = 1.0
-;tray-position = right
-;tray-background = ${colors.background}
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
@@ -203,15 +194,6 @@ font-3 = "Noto Sans Mono:size=10;0"
 modules-left = bspwm xwindow
 modules-center =
 modules-right =
-
-;tray-detached = false
-;tray-offset-x = -20
-;tray-offset-y = 0
-;tray-padding = 2
-;tray-maxsize = 20
-;tray-scale = 1.0
-;tray-position = right
-;tray-background = ${colors.background}
 
 ;tray-detached = false
 ;tray-offset-x = 0
@@ -427,8 +409,8 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 ;   
 format-prefix = " "
-format-prefix-foreground = #cd1f3f
-format-underline = #cd1f3f
+format-prefix-foreground = #FF5555
+format-underline = #FF5555
 
 ; Available tags:
 ;   <label> (default)
@@ -447,28 +429,28 @@ label-font = 3
 label = Cpu %percentage:3%%
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 3
-ramp-coreload-0-foreground = #aaff77
+ramp-coreload-0-foreground = #50FA7B
 ramp-coreload-1 = ▂
 ramp-coreload-1-font = 3
-ramp-coreload-1-foreground = #aaff77
+ramp-coreload-1-foreground = #50FA7B
 ramp-coreload-2 = ▃
 ramp-coreload-2-font = 3
-ramp-coreload-2-foreground = #aaff77
+ramp-coreload-2-foreground = #50FA7B
 ramp-coreload-3 = ▄
 ramp-coreload-3-font = 3
-ramp-coreload-3-foreground = #aaff77
+ramp-coreload-3-foreground = #50FA7B
 ramp-coreload-4 = ▅
 ramp-coreload-4-font = 3
-ramp-coreload-4-foreground = #fba922
+ramp-coreload-4-foreground = #F1FA8C
 ramp-coreload-5 = ▆
 ramp-coreload-5-font = 3
-ramp-coreload-5-foreground = #fba922
+ramp-coreload-5-foreground = #F1FA8C
 ramp-coreload-6 = ▇
 ramp-coreload-6-font = 3
-ramp-coreload-6-foreground = #ff5555
+ramp-coreload-6-foreground = #FF5555
 ramp-coreload-7 = █
 ramp-coreload-7-font = 3
-ramp-coreload-7-foreground = #ff5555
+ramp-coreload-7-foreground = #FF5555
 
 ################################################################################
 
@@ -694,15 +676,15 @@ interval = 1
 label = %percentage_used%%
 bar-used-indicator =
 bar-used-width = 10
-bar-used-foreground-0 = #3384d0
+bar-used-foreground-0 = #8BE9FD
 bar-used-fill = 
 bar-used-empty = 
 bar-used-empty-foreground = #ffffff
 
 format = <label> <bar-used>
 format-prefix = "  "
-format-prefix-foreground = #3384d0
-format-underline = #3384d0
+format-prefix-foreground = #8BE9FD
+format-underline = #8BE9FD
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -725,8 +707,8 @@ label = %percentage_used%%
 
 format = Mem <label>
 format-prefix = "  "
-format-prefix-foreground = #8be9fd
-format-underline = #8be9fd
+format-prefix-foreground = #8BE9FD
+format-underline = #8BE9FD
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -749,8 +731,8 @@ label = %gb_used%/%gb_free%
 
 format = Mem <label>
 format-prefix = "  "
-format-prefix-foreground = #3384d0
-format-underline = #3384d0
+format-prefix-foreground = #8BE9FD
+format-underline = #8BE9FD
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -768,7 +750,7 @@ icon-stop = 
 icon-play = 
 icon-pause = 
 icon-next = 
-label-song-maxlen = 50
+label-song-maxlen = 100
 label-song-ellipsis = true
 bar-progress-width = 10
 bar-progress-indicator = 
@@ -838,7 +820,7 @@ click-right = exec pavucontrol
 click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
 scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
-format-underline = #ff79c6
+format-underline = #50fa7b
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
