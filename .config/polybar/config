@@ -750,7 +750,7 @@ icon-stop = 
 icon-play = 
 icon-pause = 
 icon-next = 
-label-song-maxlen = 100
+label-song-maxlen = 50
 label-song-ellipsis = true
 bar-progress-width = 10
 bar-progress-indicator = 
@@ -808,6 +808,22 @@ format-background = ${colors.background}
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
+
+################################################################################
+
+[module/pamac-manager]
+type = custom/script
+exec = pamac checkupdates -q | wc -l
+interval = 1000
+label = Pamac : %output%
+tail = true
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix-foreground = #738adb
+format-underline = #738adb
+click-right = pamac-manager &
+click-left = pamac-manager &
+format-prefix = " "
 
 ################################################################################
 
