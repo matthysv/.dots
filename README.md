@@ -169,6 +169,9 @@ And reboot.
 
 # Finishing up and installing additional software
 
+#### TLP
+TLP is an optional package you can install to improve battery performance on laptops. It conflicts with power-profiles-daemon, which may be installed by default on some arch-based distribuions. Additionsal packages may be needed for full functionality on ThinkPads. Refer to the arch wiki if you wish to use TLP: https://wiki.archlinux.org/title/TLP
+
 #### Setup timezone
 Turn NTP on
 ```
