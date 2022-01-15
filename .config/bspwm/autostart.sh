@@ -31,7 +31,7 @@ feh --bg-fill $HOME/.config/bspwm/wall.png &
 
 xsetroot -cursor_name left_ptr &
 
-xrdb merge ~/.Xresources
+xrdb merge ~/.Xresources &
 
 #run nm-applet &
 #run xfce4-power-manager &
@@ -45,6 +45,6 @@ picom --config $HOME/.config/bspwm/picom.conf &
 #run discord &
 #run kdeconnect-indicator &
 #run noisetorch &
-#mpd &
+#~/.config/bspwm/scripts/runmpd &
 #steam-runtime -noverifyfiles -silent &
 #/usr/bin/emacs --daemon &

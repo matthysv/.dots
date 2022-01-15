@@ -1,0 +1,4 @@
+#!/bin/bash
+script_name=$(basename -- "$0")
+
+if pidof mpd >&/dev/null; then exit 1; else mpd; fi
