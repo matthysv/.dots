@@ -126,7 +126,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = bspwm xwindow
 modules-center = mpd
-modules-right = cpu2 memory2 battery date
+modules-right = cpu1 memory3 battery date
 
 tray-detached = false
 tray-offset-x = 0
