@@ -9,7 +9,7 @@
 ! Dracula
 *.foreground: #F8F8F2
 *.background: #282A36
-*.color0:     #000000
+*.color0:     #44475A
 *.color1:     #FF5555
 *.color2:     #50FA7B
 *.color3:     #F1FA8C
