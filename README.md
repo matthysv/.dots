@@ -47,6 +47,12 @@ nmcli device wifi connect NETWORKNAME password PASS
 
 ## Packages to install:
 
+### Display manager:
+- ly
+```
+git clone --recurse-submodules https://github.com/nullgemm/ly.git
+sudo make install
+```
 ### Utilities:
 - btop
 - cargo
@@ -77,15 +83,9 @@ nmcli device wifi connect NETWORKNAME password PASS
 - rofi
 - rxvt-unicode
 - libwnck3
-- lightdm
-- lightdm-gtk-greeter
-- lightdm-gtk-greeter-settings
 - mesa-utils
 - sxhkd
 - xf86-input-libinput
-- xfce4
-- xfce4 notifyd
-- xfce4-whiskermenu-plugin
 - xorg-font-util
 - xorg-server
 - xorg-xbacklight
