@@ -58,13 +58,21 @@ super + s
 super + Return
     st
 
-#youtube-rofi
+#lbry
 super + y
-    yt-rofi
+    lbry
 
 #Xkill
 super + Escape
     xkill
+
+#show/hide polybar
+super + apostrophe
+    polybar-msg cmd show && bspc config top_padding 30
+
+super + semicolon
+    polybar-msg cmd hide && bspc config top_padding 0
+
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -81,6 +89,10 @@ super + shift + w
 #rofi drun
 super + shift + d
     rofi -show drun
+
+#youtube-rofi
+super + shift + y
+    yt-rofi
 
 #reload sxhkd:
 super + shift + s
@@ -182,18 +194,6 @@ XF86MonBrightnessUp
 #Brightness down
 XF86MonBrightnessDown
     xbacklight -dec 10
-
-#########################
-#        POLYBAR        #
-#########################
-
-#Show/hide polybar
-
-super + apostrophe
-    polybar-msg cmd show && bspc config top_padding 30
-
-super + semicolon
-    polybar-msg cmd hide && bspc config top_padding 0
 
 #################################################################
 #################################################################
