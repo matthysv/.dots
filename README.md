@@ -61,11 +61,13 @@ sudo make install
 - git
 - grep
 - jq
+- maim
 - mpv
 - ntp
 - ranger
 - sed
 - vim
+- xclip
 - zathura-pdf-mupdf
 - zsh
 - zsh-completions

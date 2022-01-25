@@ -46,6 +46,10 @@ super + v
 super + m
     st -e ncmpcpp
 
+#Maim (Select Region)
+super + b
+    maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot taken" "Copied to clipboard"
+
 #Network Manager
 super + n
     bash ~/.config/rofi/scripts/rofi-network-manager.sh
@@ -69,10 +73,8 @@ super + Escape
 #show/hide polybar
 super + apostrophe
     polybar-msg cmd show && bspc config top_padding 30
-
 super + semicolon
     polybar-msg cmd hide && bspc config top_padding 0
-
 
 #################################################################
 # SUPER + SHIFT KEYS
