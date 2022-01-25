@@ -24,6 +24,3 @@ count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
     else
     polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
     fi
-    ;;
-
-esac
