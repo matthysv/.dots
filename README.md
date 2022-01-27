@@ -55,10 +55,12 @@ git clone --recurse-submodules https://github.com/nullgemm/ly.git
 sudo make install
 ```
 ### Utilities:
+- bat
 - btop
 - cargo
 - curl
-- exa
+- exai
+- fd
 - ffmpeg
 - git
 - grep
@@ -67,6 +69,7 @@ sudo make install
 - mpv
 - ntp
 - ranger
+- ripgrep
 - sed
 - vim
 - xclip
