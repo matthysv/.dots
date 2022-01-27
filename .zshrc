@@ -85,17 +85,6 @@ export PATH=~/.cargo/bin:$PATH
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-# Aliases
-alias btoff='systemctl stop bluetooth'
-alias bton='systemctl start bluetooth'
-alias doppler='~/.config/scripts/doppler.sh'
-alias neofetch='neofetch --source ~/.config/neofetch/art/rectangles'
-alias resetdisplay='autorandr horizontal'
-alias steamdrac='~/.local/share/Steam/skins/Dracula/install.sh'
-alias tox='toxic -f ~/.config/tox/tox.tox'
-alias weather='curl wttr.in'
-alias xrotate='~/.config/scripts/xrotate.sh'
-
 # Visual shell startup command
 #pokemon-colorscripts -r 1-3
 #colorscript -e panes

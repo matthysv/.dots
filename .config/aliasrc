@@ -1,0 +1,11 @@
+# Aliases
+alias btoff='systemctl stop bluetooth'
+alias bton='systemctl start bluetooth'
+alias doppler='~/.config/scripts/doppler.sh'
+alias ls='exa'
+alias neofetch='neofetch --source ~/.config/neofetch/art/rectangles'
+alias resetdisplay='autorandr horizontal'
+alias steamdrac='~/.local/share/Steam/skins/Dracula/install.sh'
+alias tox='toxic -f ~/.config/tox/tox.tox'
+alias weather='curl wttr.in'
+alias xrotate='~/.config/scripts/xrotate.sh'

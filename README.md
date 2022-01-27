@@ -1,5 +1,5 @@
 # .dots
-These are my public dotfiles. With the listed packages, they should work on arch and arch-based systems. This repo includes configs for: 
+These are my public dotfiles. With the listed packages, they should work on arch and arch-based distros, but I will also try to accomodate debian-based distros. This repo includes configs for: 
 BSPWM with sxhkd, picom and polybar.
 Doom Emacs
 MangoHud
@@ -47,7 +47,8 @@ nmcli device wifi connect NETWORKNAME password PASS
 
 ## Packages to install:
 
-### Display manager:
+### Display manager (pick one):
+- lightdm
 - ly
 ```
 git clone --recurse-submodules https://github.com/nullgemm/ly.git
@@ -57,6 +58,7 @@ sudo make install
 - btop
 - cargo
 - curl
+- exa
 - ffmpeg
 - git
 - grep
@@ -163,7 +165,7 @@ Include = /etc/pacman.d/mirrorlist
 ```
 git clone https://github.com/matthysv/.dots
 ```
-After installing needed packages and placing dotfiles in the appropriate directories, run this command to enable lightdm:
+After installing needed packages and placing dotfiles in the appropriate directories, run this command to enable lightdm. You can substitute lightdm with ly if you prefer:
 ```
 sudo systemctl enable lightdm
 ```
@@ -229,8 +231,4 @@ sudo cp -r gtk /usr/share/themes
 git clone https://github.com/matheuuus/dracula-icons
 sudo cp -r dracula-icons /usr/share/icons
 ```
-Use lxappearance to set the appearance of gtk applications as well as the mouse pointer. Set the cursor on bspwm with the following command:
-```
-xsetroot -cursor_name left_ptr
-```
-
+Use lxappearance to set the appearance of gtk applications as well as the mouse pointer.
