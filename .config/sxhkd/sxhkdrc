@@ -54,10 +54,6 @@ super + b
 super + n
     bash ~/.config/rofi/scripts/rofi-network-manager.sh
 
-#steam
-super + s
-    steam-runtime -noverifyfiles
-
 #st
 super + Return
     st
@@ -92,6 +88,10 @@ super + shift + w
 super + shift + d
     rofi -show drun
 
+#steam
+super + shift + s
+    steam-runtime -noverifyfiles
+
 #youtube-rofi
 super + shift + y
     yt-rofi
@@ -99,7 +99,6 @@ super + shift + y
 #reload sxhkd:
 super + shift + s
     pkill -USR1 -x sxhkd
-
 
 #################################################################
 # CONTROL + ALT KEYS
@@ -145,7 +144,6 @@ ctrl + alt + t
 #ctrl + shift + Print
 #     gnome-screenshot -i
 
-
 #################################################################
 #     FUNCTION KEYS
 #################################################################
@@ -153,7 +151,6 @@ ctrl + alt + t
 #xfce4-terminal dropdown
 #F12
 #    xfce4-terminal --drop-down
-
 
 #################################################################
 #     MULTIMEDIA KEYS
@@ -173,7 +170,7 @@ XF86AudioMute
 
 #Use playerctl for cmus, pragha, spotify and others
 
-#PLAY
+#Play
 XF86AudioPlay
     mpc toggle
 
@@ -181,7 +178,7 @@ XF86AudioPlay
 XF86AudioNext
     mpc next
 
-#previous
+#Previous
 XF86AudioPrev
     mpc prev
 
@@ -198,12 +195,6 @@ XF86MonBrightnessDown
     xbacklight -dec 10
 
 #################################################################
-#################################################################
-##################   DESKTOP SPECIFIC    ########################
-#################################################################
-#################################################################
-
-#################################################################
 # CTRL + ALT KEYS
 #################################################################
 
@@ -215,15 +206,15 @@ ctrl + alt + o
 # SUPER + KEYS
 #################################################################
 
-#Toggle fullscreen of window
+#Toggle fullscreen
 super + f
     bspc node --state \~fullscreen
 
-# Toggle pseudo tiling of window
+#Toggle pseudo tiling of window
 super + o
     bspc node --state \~pseudo_tiled
 
-#kill
+#kill active window
 super + q
     bspc node -c
 
@@ -235,15 +226,15 @@ super + q
 #super + Tab
 #    bspc desktop -f '^{1-9,10}'
 
-# Increase/decrease window gap on focused desktop
+#Increase/decrease window gap on focused desktop
 super + bracket{left,right}
     bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
-# set the window state
+#Set the window state
 super + space
     bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-# Move focus to other monitor
+#Move focus to other monitor
 super + BackSpace
     bspc monitor -f next
 
@@ -251,7 +242,7 @@ super + BackSpace
 # SUPER + ALT KEYS
 #################################################################
 
-# Move floating window
+#Move floating window
 super + alt + {_,shift + }{Left,Down,Up,Right}
     ~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
 
@@ -259,7 +250,7 @@ super + alt + {_,shift + }{Left,Down,Up,Right}
 # SUPER + CONTROL KEYS
 #################################################################
 
-# Cancel preselection
+#Cancel preselection
 super + ctrl + space
     bspc node --presel-dir cancel
 
@@ -267,12 +258,11 @@ super + ctrl + space
 # SUPER + SHIFT KEYS
 #################################################################
 
-
 #Reload bspwm
 super + shift + r
     ~/.config/bspwm/bspwmrc
 
-#kill
+# kill
 super + shift + q
     bspc node -c
 
@@ -324,7 +314,6 @@ super + ctrl + {u,i,o,p}
 super + ctrl + {_,shift +}{1-9}
     bspc node {_,@/} --presel-ratio 0.{1-9}
 
-
 #################################################################
 # ALT KEYS
 #################################################################
@@ -345,7 +334,7 @@ alt + space
 # ALT + SHIFT KEYS
 #################################################################
 
-# Expand/contract a tiled space
+#Expand/contract a tiled space
 alt + shift + {h,j,k,l}
     bspc node -z {left -20 0 || bspc node -z right -20 0, \
                 bottom 0 20 || bspc node -z top 0 20,\
@@ -356,19 +345,13 @@ alt + shift + {h,j,k,l}
 # CTRL + ALT KEYS
 #################################################################
 
-# Focus next/previous window
+#Focus window north/south/east/west (alternative to super + vi directions)
 ctrl + alt + Left
      bspc node --focus west
-
-# Focus next/previous window
 ctrl + alt + Right
      bspc node --focus east
-
-# Focus Up window
 ctrl +alt + Up
      bspc node --focus north
-
-# Focus Down window
 ctrl + alt + Down
      bspc node --focus south
 
@@ -380,8 +363,7 @@ super + {1-9,0}
 super + shift + {1-9,0}
       id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
-## super & mouse scroll
-
-# Focused desktop window gap
+### Super & mouse scroll
+#Focused desktop window gap
 super + button{4,5}
       bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 2 ))
