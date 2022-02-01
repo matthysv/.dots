@@ -81,6 +81,9 @@ export VISUAL='vim'
 # Export Cargo Path
 export PATH=~/.cargo/bin:$PATH
 
+# Export Doom Emacs Path
+export PATH=~/.emacs.d/bin:$PATH
+
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"

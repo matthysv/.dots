@@ -38,6 +38,10 @@ super + r
 super + g
     lutris
 
+#Maim (Select Region)
+super + s
+    maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot taken" "Copied to clipboard"
+
 #Pavucontrol
 super + v
     pavucontrol
@@ -89,7 +93,7 @@ super + shift + d
     rofi -show drun
 
 #steam
-super + shift + s
+super + shift + g
     steam-runtime -noverifyfiles
 
 #youtube-rofi
@@ -137,11 +141,11 @@ ctrl + alt + t
 #    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 
 #screeenshooter
-#ctrl + Print
-#     xfce4-screenshooter
+Print
+     xfce4-screenshooter
 
 #Gnome-Screenshot
-#ctrl + shift + Print
+#Print
 #     gnome-screenshot -i
 
 #################################################################
