@@ -266,7 +266,7 @@ super + ctrl + space
 super + shift + r
     ~/.config/bspwm/bspwmrc
 
-# kill
+#kill
 super + shift + q
     bspc node -c
 
@@ -274,27 +274,27 @@ super + shift + q
 super + shift + x
     bspc quit
 
-# Focus/swap windows by direction
+#Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
     bspc node --{focus,swap} {west,south,north,east}
 
-# Flip layout vertically/horizontally
+#Flip layout vertically/horizontally
 super + {_,shift + }a
     bspc node @/ --flip {vertical,horizontal}
 
-# Move focused window to other monitor
+#Move focused window to other monitor
 super + shift + Left
     bspc node -m next --follow
 
-# Move focused window to other monitor
+#Move focused window to other monitor
 super + shift + Right
     bspc node -m next --follow
 
-# Move focused window to other monitor
+#Move focused window to other monitor
 super + shift + Up
     bspc node -m next --follow
 
-# Move focused window to other monitor
+#Move focused window to other monitor
 super + shift + Down
     bspc node -m next --follow
 
@@ -302,19 +302,19 @@ super + shift + Down
 # SUPER + CONTROL KEYS
 #################################################################
 
-# Focus/swap windows by direction
+#Focus/swap windows by direction
 super + ctrl + {Left,Down,Up,Right}
     bspc node --{focus} {west,south,north,east}
 
-# Focus parent/brother/first/second for preselection
+#Focus parent/brother/first/second for preselection
 super + ctrl + {e,r,t,y}
     bspc node --focus @{parent,brother,first,second}
 
-# Preselect the splitting area for next window on leaf/parent
+#Preselect the splitting area for next window on leaf/parent
 super + ctrl + {u,i,o,p}
     bspc node --presel-dir \~{west,south,north,east}
 
-# Define splitting ratio for next window on leaf/parent
+#Define splitting ratio for next window on leaf/parent
 super + ctrl + {_,shift +}{1-9}
     bspc node {_,@/} --presel-ratio 0.{1-9}
 
