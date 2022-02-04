@@ -176,6 +176,12 @@ And reboot.
 
 # Finishing up and installing additional software
 
+#### fstrim
+If you are using an SSD, enable the fstrim timer.
+```
+systemctl enable fstrim.timer
+```
+
 #### TLP
 TLP is an optional package you can install to improve battery performance on laptops. It conflicts with power-profiles-daemon, which may be installed by default on some arch-based distribuions. Additionsal packages may be needed for full functionality on ThinkPads. Refer to the arch wiki if you wish to use TLP: https://wiki.archlinux.org/title/TLP
 
