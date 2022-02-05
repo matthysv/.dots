@@ -116,9 +116,9 @@ ctrl + alt + u
 ctrl + alt + r
   rofi-theme-selector
 
-#thunar
+#pcmanfm
 ctrl + alt + Return
-    thunar
+    pcmanfm
 
 #xfce terminal
 ctrl + alt + t
