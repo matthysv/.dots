@@ -2,9 +2,7 @@
 
 # More info : https://github.com/jaagr/polybar/wiki
 
-# Install the following applications for polybar and icons in polybar if you are on ArcoLinuxD
-# awesome-terminal-fonts
-# Tip : There are other interesting fonts that provide icons like nerd-fonts-complete
+# Uses awesome-terminal-fonts or nerd-fonts
 # --log=error
 # Terminate already running bar instances
 killall -q polybar
@@ -13,14 +11,7 @@ killall -q polybar
 while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
 desktop=$(echo $DESKTOP_SESSION)
-count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
 
-    if type "xrandr" > /dev/null; then
-      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
+polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
 # Uncomment for second polybar
-#        MONITOR=$m polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config &
-      done
-    else
-    polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
-    fi
+#polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config &
