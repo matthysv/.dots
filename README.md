@@ -68,6 +68,7 @@ sudo make install
 - maim
 - mpv
 - ntp
+- pcmanfm
 - ranger
 - ripgrep
 - sed
@@ -130,9 +131,6 @@ sudo make install
 - emacs
 - meld
 - ncmpcpp, mpc and mpd
-- thunar
-- thunar-archive-plugin
-- thunar-volman
 - w3m
 
 #### Install paru if you don't have an AUR helper
