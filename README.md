@@ -59,7 +59,7 @@ sudo make install
 - btop
 - cargo
 - curl
-- exai
+- exa
 - fd
 - ffmpeg
 - git
@@ -78,6 +78,11 @@ sudo make install
 - zsh
 - zsh-completions
 - zsh-syntax-highlighting
+
+####GPU Monitors
+- AMD - radeontop
+- Intel - intel-gpu-tools - intel_gpu_top
+- Nvidia - nvtop
 
 ### Desktop and Display manager:
 - argyllcms (for color profile)
@@ -181,7 +186,7 @@ systemctl enable fstrim.timer
 ```
 
 #### TLP
-TLP is an optional package you can install to improve battery performance on laptops. It conflicts with power-profiles-daemon, which may be installed by default on some arch-based distribuions. Additionsal packages may be needed for full functionality on ThinkPads. Refer to the arch wiki if you wish to use TLP: https://wiki.archlinux.org/title/TLP
+TLP is an optional package you can install to improve battery performance on laptops. It conflicts with power-profiles-daemon, which may be installed by default on some arch-based distribuions. Additional packages may be needed for full functionality on ThinkPads. Refer to the arch wiki if you wish to use TLP: https://wiki.archlinux.org/title/TLP
 
 #### Setup timezone
 Turn NTP on
