@@ -88,6 +88,12 @@ super + shift + Return
 super + shift + w
     torbrowser-launcher
 
+#gpu monitor
+super + shift + t
+    #sudo intel_gpu_top
+    #nvtop
+    #radeontop
+
 #rofi drun
 super + shift + d
     rofi -show drun
