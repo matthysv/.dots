@@ -18,8 +18,6 @@ margin-bottom = 0
 
 [settings]
 ;https://github.com/jaagr/polybar/wiki/Configuration#application-settings
-throttle-output = 5
-throttle-output-for = 10
 screenchange-reload = true
 compositing-background = over
 compositing-foreground = over
@@ -32,12 +30,12 @@ format-foreground = #eceff4
 ;format-foreground = #FF0000
 format-background = #2e3440
 ;format-background = #00FF00
-format-underline =
-format-overline =
-format-spacing =
-format-padding =
-format-margin =
-format-offset =
+;format-underline =
+;format-overline =
+;format-spacing =
+;format-padding =
+;format-margin =
+;format-offset =
 
 [colors]
 ; Nord theme ============
@@ -847,19 +845,6 @@ format-underline = #FFBB00
 label = %output%
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
-
-################################################################################
-
-[module/release]
-type = custom/script
-exec = (lsb_release -d | awk {'print $2'} ;echo " "; lsb_release -r | awk {'print $2'}) | tr -d '\n'
-interval = 6000
-
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #62FF00
-format-underline = #62FF00
 
 ################################################################################
 

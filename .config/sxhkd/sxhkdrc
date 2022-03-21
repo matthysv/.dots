@@ -24,7 +24,7 @@ super + t
 
 #Power Menu
 super + x
-    rofi -show power-menu -modi power-menu:~/.config/rofi/scripts/rofi-power-menu
+    rofi -show power-menu -modi power-menu:~/.config/rofi/scripts/rofi-power-menu.sh
 
 #Rofi
 super + p
@@ -42,6 +42,10 @@ super + g
 super + s
     maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot taken" "Copied to clipboard"
 
+#Rofi
+super + d
+    rofi -show drun -show-icons
+
 #Pavucontrol
 super + v
     pavucontrol
@@ -56,7 +60,7 @@ super + b
 
 #Network Manager
 super + n
-    bash ~/.config/rofi/scripts/rofi-network-manager.sh
+    bash ~/.config/rofi/scripts/rofi-wifi-menu.sh
 
 #st
 super + Return
