@@ -94,6 +94,7 @@ sudo make install
 - lxappearance
 - picom
 - rofi
+- rofi-emoji
 - rxvt-unicode
 - libwnck3
 - mesa-utils

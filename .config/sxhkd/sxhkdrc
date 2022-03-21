@@ -80,6 +80,10 @@ super + apostrophe
 super + semicolon
     polybar-msg cmd hide && bspc config top_padding 0
 
+#emoji picker
+super + backslash
+    rofi -show emoji -modi emoji
+
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################
