@@ -44,7 +44,6 @@ dunst -config ~/.config/dunst/dunstrc &
 
 #run discord &
 #run kdeconnect-indicator &
-#run noisetorch &
 #~/.config/bspwm/scripts/runmpd &
 #steam-runtime -noverifyfiles -silent &
 #/usr/bin/emacs --daemon &

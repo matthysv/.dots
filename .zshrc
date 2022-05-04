@@ -76,7 +76,7 @@ bindkey '^e' edit-command-line
 
 # Make vim the default editor
 export EDITOR='vim'
-export VISUAL='vim'
+export VISUAL='emacsclient -c -a emacs'
 
 # Export Cargo Path
 export PATH=~/.cargo/bin:$PATH
