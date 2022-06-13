@@ -1,5 +1,5 @@
 # .dots
-These are my public dotfiles. With the listed packages, they should work on arch and arch-based distros, but I will also try to accomodate debian-based distros. This repo includes configs for: 
+These are my public dotfiles. With the listed packages, they should work on arch and arch-based distros, but I also try to accomodate debian-based distros. This repo includes configs for: 
 BSPWM with sxhkd, picom and polybar.
 Doom Emacs
 MangoHud
@@ -11,6 +11,8 @@ urxvt
 uxterm and xterm
 xfce terminal
 zsh
+
+## Setting up internet on arch
 
 ### With iwd
 ```
@@ -48,12 +50,20 @@ nmcli device wifi connect NETWORKNAME password PASS
 ## Packages to install:
 
 ### Display manager (pick one):
+Some great options are
 - lightdm
 - ly
+
+If ly is not in your package manager, try 
 ```
 git clone --recurse-submodules https://github.com/nullgemm/ly.git
 sudo make install
 ```
+Run this command to enable lightdm. You can substitute lightdm with ly if you prefer:
+```
+sudo systemctl enable lightdm
+```
+
 ### Utilities:
 - bat
 - btop
@@ -79,7 +89,7 @@ sudo make install
 - zsh-completions
 - zsh-syntax-highlighting
 
-####GPU Monitors
+#### GPU Monitors
 - AMD - radeontop
 - Intel - intel-gpu-tools - intel_gpu_top
 - Nvidia - nvtop
@@ -152,7 +162,7 @@ cd paru
 makepkg -si
 ```
 
-#### From AUR
+#### useful packages available on the AUR
 - hblock
 - nerd-fonts-source-code-pro
 - pokemon-colorscripts-git
@@ -172,11 +182,6 @@ Include = /etc/pacman.d/mirrorlist
 ```
 git clone https://github.com/matthysv/.dots
 ```
-After installing needed packages and placing dotfiles in the appropriate directories, run this command to enable lightdm. You can substitute lightdm with ly if you prefer:
-```
-sudo systemctl enable lightdm
-```
-And reboot.
 
 # Finishing up and installing additional software
 
@@ -209,6 +214,9 @@ sudo usermod -a -G roccat $USER
 ```
 chsh -s /usr/bin/zsh
 ```
+And reboot.
+
+# Other useful things off github
 
 #### Install Doom Emacs
 ```
