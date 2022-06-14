@@ -1,16 +1,16 @@
 # .dots
 These are my public dotfiles. With the listed packages, they should work on arch and arch-based distros, but I also try to accomodate debian-based distros. This repo includes configs for: 
-BSPWM with sxhkd, picom and polybar.
-Doom Emacs
-MangoHud
-mpd with mpc and ncmpcpp
-neofetch
-ranger
-rofi
-urxvt
-uxterm and xterm
-xfce terminal
-zsh
+BSPWM with sxhkd, picom and polybar,
+Doom Emacs,
+MangoHud,
+mpd with mpc and ncmpcpp,
+neofetch,
+ranger,
+rofi,
+urxvt,
+uxterm and xterm,
+xfce terminal,
+zsh,
 
 ## Setting up internet on arch
 
