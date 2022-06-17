@@ -42,8 +42,8 @@ picom --config $HOME/.config/bspwm/picom.conf &
 dunst -config ~/.config/dunst/dunstrc &
 #run volumeicon &
 
-#run discord &
+#flatpak run com.discordapp.Discord &
 #run kdeconnect-indicator &
 #~/.config/bspwm/scripts/runmpd &
-#steam-runtime -noverifyfiles -silent &
+#steam-runtime -silent &
 #/usr/bin/emacs --daemon &
