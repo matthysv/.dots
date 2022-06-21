@@ -6,25 +6,53 @@
 !!! copy/paste colorcodes in
 !!! begin
 
+! Catpuccin
+*background: #1E1E2E
+*foreground: #D9E0EE
+! Gray
+*color0: #6E6C7E
+*color8: #988BA2
+! Red
+*color1: #F28FAD
+*color9: #F28FAD
+! Green
+*color2: #ABE9B3
+*color10: #ABE9B3
+! Yellow
+*color3: #FAE3B0
+*color11:  #FAE3B0
+! Blue
+*color4: #96CDFB
+*color12: #96CDFB
+! Maguve
+*color5: #DDB6F2
+*color13: #DDB6F2
+! Pink
+*color6: #F5C2E7
+*color14: #F5C2E7
+! Whites
+*color7: #C3BAC6
+*color15: #D9E0EE
+
 ! Dracula
-*.foreground: #F8F8F2
-*.background: #282A36
-*.color0:     #44475A
-*.color1:     #FF5555
-*.color2:     #50FA7B
-*.color3:     #F1FA8C
-*.color4:     #BD93F9
-*.color5:     #FF79C6
-*.color6:     #8BE9FD
-*.color7:     #BFBFBF
-*.color8:     #4D4D4D
-*.color9:     #FF6E67
-*.color10:    #5AF78E
-*.color11:    #F4F99D
-*.color12:    #CAA9FA
-*.color13:    #FF92D0
-*.color14:    #9AEDFE
-*.color15:    #F8F8F2
+!*.foreground: #F8F8F2
+!*.background: #282A36
+!*.color0:     #44475A
+!*.color1:     #FF5555
+!*.color2:     #50FA7B
+!*.color3:     #F1FA8C
+!*.color4:     #BD93F9
+!*.color5:     #FF79C6
+!*.color6:     #8BE9FD
+!*.color7:     #BFBFBF
+!*.color8:     #4D4D4D
+!*.color9:     #FF6E67
+!*.color10:    #5AF78E
+!*.color11:    #F4F99D
+!*.color12:    #CAA9FA
+!*.color13:    #FF92D0
+!*.color14:    #9AEDFE
+!*.color15:    #F8F8F2
 
 ! Gruvbox Dark
 ! !hard contrast: *background: #1d2021

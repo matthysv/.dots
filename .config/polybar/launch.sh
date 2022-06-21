@@ -14,4 +14,4 @@ desktop=$(echo $DESKTOP_SESSION)
 
 polybar --reload mainbar-bspwm -c ~/.config/polybar/config.ini &
 # Uncomment for second polybar
-#polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config &
+polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config.ini &
