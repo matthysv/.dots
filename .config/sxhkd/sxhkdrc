@@ -10,9 +10,9 @@
 # SUPER + ... KEYS
 #################################################################
 
-#emacs
+#dooit
 super + e
-    emacsclient -c
+    st -e ~/.local/bin/dooit
 
 #Browser
 super + w

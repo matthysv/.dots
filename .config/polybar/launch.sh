@@ -14,7 +14,8 @@ desktop=$(echo $DESKTOP_SESSION)
 
 polybar --reload mainbar-left -c ~/.config/polybar/config.ini &
 polybar --reload mainbar-center -c ~/.config/polybar/config.ini &
-polybar --reload mainbar-right -c ~/.config/polybar/config.ini &
+#polybar --reload mainbar-right -c ~/.config/polybar/config.ini &
 # Uncomment below for second screen polybar
 #polybar --reload secondary-left -c ~/.config/polybar/config.ini &
 #polybar --reload secondary-center -c ~/.config/polybar/config.ini &
+#polybar --reload secondary-right -c ~/.config/polybar/config.ini &
