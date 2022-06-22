@@ -12,6 +12,9 @@ while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
 desktop=$(echo $DESKTOP_SESSION)
 
-polybar --reload mainbar-bspwm -c ~/.config/polybar/config.ini &
-# Uncomment for second polybar
-polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config.ini &
+polybar --reload mainbar-left -c ~/.config/polybar/config.ini &
+polybar --reload mainbar-center -c ~/.config/polybar/config.ini &
+polybar --reload mainbar-right -c ~/.config/polybar/config.ini &
+# Uncomment below for second screen polybar
+#polybar --reload secondary-left -c ~/.config/polybar/config.ini &
+#polybar --reload secondary-center -c ~/.config/polybar/config.ini &
