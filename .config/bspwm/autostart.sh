@@ -7,7 +7,7 @@ function run {
   fi
 }
 
-setxkbmap "us(intl)" &
+setxkbmap "en_US" &
 xsetroot -cursor_name left_ptr &
 
 #Find out your monitor name with xrandr or arandr (save and you get this line)

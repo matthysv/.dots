@@ -83,8 +83,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Make vim the default editor
-export EDITOR='vim'
-export VISUAL='emacsclient -c -a emacs'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # Export Cargo Path
 export PATH=~/.cargo/bin:$PATH
