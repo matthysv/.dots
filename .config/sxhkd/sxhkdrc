@@ -76,7 +76,7 @@ super + Escape
 
 #show/hide polybar
 super + apostrophe
-    polybar-msg cmd show && bspc config top_padding 30
+    polybar-msg cmd show && bspc config top_padding 40
 super + semicolon
     polybar-msg cmd hide && bspc config top_padding 0
 
