@@ -1,3 +1,10 @@
+##### directories ######
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory = ~/.cache/lyrics
+
+##### music visualizer #####
+visualizer_in_stereo = yes
+
+##### ui #####
 user_interface = alternative
 startup_slave_screen = "visualizer"
-lyrics_directory = ~/.cache/lyrics
