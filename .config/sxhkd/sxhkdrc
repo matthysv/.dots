@@ -15,7 +15,7 @@ super + e
     vscodium
 
 #dooit
-super + e
+super + a
     st -e ~/.local/bin/dooit
 
 #Browser
