@@ -1,7 +1,7 @@
 # .dots
 These are my public dotfiles. With the listed packages, they should work on arch and arch-based distros, but I also try to accomodate debian-based distros. This repo includes configs for: 
 BSPWM with sxhkd, picom and polybar,
-Doom Emacs,
+neovim,
 MangoHud,
 mpd with mpc and ncmpcpp,
 neofetch,
@@ -77,12 +77,12 @@ sudo systemctl enable lightdm
 - jq
 - maim
 - mpv
+- neovim
 - ntp
 - pcmanfm
 - ranger
 - ripgrep
 - sed
-- vim
 - xclip
 - zathura-pdf-mupdf
 - zsh
@@ -144,7 +144,6 @@ sudo systemctl enable lightdm
 - pipewire-media-session
 
 ### Additional reccomended packages
-- emacs
 - meld
 - ncmpcpp, mpc and mpd
 - w3m
@@ -218,12 +217,6 @@ And reboot.
 
 # Other useful things off github
 
-#### Install Doom Emacs
-```
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-~/.emacs.d/bin/doom install
-```
-
 #### Install ani-cli
 ```
 git clone https://github.com/pystardust/ani-cli.git
@@ -236,6 +229,12 @@ sudo make install
 git clone https://github.com/siduck/st
 cd st
 sudo make install
+```
+
+#### Install vim-plug
+```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
 #### Install yt-rofi
