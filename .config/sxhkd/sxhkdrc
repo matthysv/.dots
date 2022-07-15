@@ -88,6 +88,12 @@ super + semicolon
 super + backslash
     rofi -show emoji -modi emoji
 
+#enable/disable picom
+super + minus
+    pkill -fi picom
+super + equal
+	picom --config $HOME/.config/picom/picom.conf
+
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################

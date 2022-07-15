@@ -271,11 +271,4 @@ cd youtube-rofi
 sudo make install
 ```
 
-#### Dracula GTK widget theming and icons
-```
-git clone https://github.com/dracula/gtk.git
-sudo cp -r gtk /usr/share/themes
-git clone https://github.com/matheuuus/dracula-icons
-sudo cp -r dracula-icons /usr/share/icons
-```
-Use lxappearance to set the appearance of gtk applications as well as the mouse pointer.
+#### Use lxappearance to set the appearance of gtk applications as well as the mouse pointer.
