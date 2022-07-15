@@ -14,18 +14,17 @@ Plug 'preservim/nerdtree' " NerdTree
 Plug 'tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'vim-airline/vim-airline' " Status bar
 Plug 'vim-airline/vim-airline-themes'
-Plug 'lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
 Plug 'ap/vim-css-color' " CSS Color Preview
 Plug 'neoclide/coc.nvim'  " Auto Completion
 Plug 'ryanoasis/vim-devicons' " Developer Icons
-Plug 'tc50cal/vim-terminal' " Vim Terminal
 Plug 'preservim/tagbar' " Tagbar for code navigation
 Plug 'terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 call plug#end()
 
+" set completeopt-=preview
+
 " :PlugClean :PlugInstall :UpdateRemotePlugins
-"
-" :CocInstall coc-python coc-html
+" :CocInstall @yaegassy/coc-ansiblecoc-html coc-css coc-git coc-html coc-json
 " :CocCommand snippets.edit... FOR EACH FILE TYPE
 
 nnoremap <C-f> :NERDTreeFocus<CR>
