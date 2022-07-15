@@ -250,7 +250,7 @@ type pip3
 hash -r
 pip3
 ```
-
+now open nvim and run :PlugInstall
 
 Install steps for coc.nvim
 ```
