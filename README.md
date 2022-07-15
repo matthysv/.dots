@@ -250,7 +250,6 @@ type pip3
 hash -r
 pip3
 ```
-now open nvim and run :PlugInstall
 
 Install steps for coc.nvim
 ```
@@ -260,7 +259,6 @@ sudo npm install -g yarn
 yarn install
 yarn build
 ```
-
 
 Now within Neovim, you should be able to install modules for your languages with :CocInstall coc-python for example.
 
