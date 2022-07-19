@@ -88,6 +88,10 @@ super + semicolon
 super + backslash
     rofi -show emoji -modi emoji
 
+#sleep screen
+super + slash
+	sleep 1 ; xset dpms force off
+
 #enable/disable picom
 super + minus
     pkill -fi picom
