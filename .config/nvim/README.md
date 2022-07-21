@@ -1,4 +1,4 @@
-#### Installing Neovim config
+### Installing Neovim config
 Install vim-plug
 ```
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
