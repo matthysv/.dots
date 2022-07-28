@@ -11,7 +11,7 @@ setxkbmap "en_US" &
 xsetroot -cursor_name left_ptr &
 
 #Find out your monitor name with xrandr or arandr (save and you get this line)
-#xrandr --output DP-0 --primary --mode 2560x1440 --rate 144.00 --output HDMI-0 --mode 1920x1080 --rate 60.00 --left-of DP-0 --rotate left
+#xrandr --output HDMI-0 --mode 1920x1080 --rate 60.00 --pos 0x0 --rotate left --output DP-0 --primary --mode 2560x1440 --rate 144.00 --pos 1080x133 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --off
 autorandr horizontal
 
 #Set monitor color profile using argyllcms

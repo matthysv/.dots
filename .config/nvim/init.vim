@@ -24,7 +24,7 @@ call plug#end()
 " set completeopt-=preview
 
 " :PlugClean :PlugInstall :UpdateRemotePlugins
-" :CocInstall @yaegassy/coc-ansiblecoc-html coc-css coc-git coc-html coc-json
+" :CocInstall @yaegassy/coc-ansiblecoc-html coc-css coc-git coc-html coc-json coc-rust-analyzer
 " :CocCommand snippets.edit... FOR EACH FILE TYPE
 
 nnoremap <C-f> :NERDTreeFocus<CR>

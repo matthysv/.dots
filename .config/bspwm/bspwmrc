@@ -34,6 +34,9 @@ bspc config pointer_action3 resize_corner
 bspc config remove_disabled_monitors true
 bspc config merge_overlapping_monitors true
 
+#Set to 17ms for 60hz monitors, or 7ms for 144hz.
+bspc config pointer_motion_interval 17ms
+
 # BSPWM coloring
 # Catppuccin
 bspc config normal_border_color                "#1E1E2E"
@@ -56,7 +59,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 # Floating applications
 bspc rule -a Arandr state=floating
-#bspc rule -a rofi state=floating sticky=on
+bspc rule -a rofi state=floating sticky=on
 
 # Tiled applications
 #bspc rule -a Gnome-disks state=tiled
